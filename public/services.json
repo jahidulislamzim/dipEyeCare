@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "laser in-situ keratomileusis",
+        "price": "3000",
+        "description": "LASIK is a type of laser refractive surgery. One unique feature of LASIK surgery is the creation of a corneal flap on the surface of your eye. This reduces recovery time and discomfort after surgery. The flap is created by a laser or microkeratome (a special surgical blade). LASIK surgery was FDA approved in 1998.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRlvEyEFNrCaXs2U9MGUnastkg3ca9RFx8d-ZGd-cVVolm3mVq7lB2SYkDzA_K_0ydQY&usqp=CAU"
+    },
+    {
+        "id": "2",
+        "name": "photorefractive keratectomy",
+        "price": "1006",
+        "description": "PRK is another form of laser refractive surgery. It delivers comparable vision improvement to LASIK. However, PRK does not require the corneal flap incision. Instead, the surgeon removes the upper layer of tissue in your cornea (epithelium). This is done with an alcohol solution and surgical tools before applying the laser. As a result, there are some key differences between PRK and LASIK:",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5hVzitoNuERRtjSHzrq5R5MKF9k1yOIHjn19v9q14QiM9y6DJQKpIEwSVKbxnGu8e4Mc&usqp=CAU"
+    },
+    {
+        "id": "3",
+        "name": "laser subepithelial keratomileusis",
+        "price": "1500",
+        "description": "These procedures are modified PRK and LASIK techniques. LASEK involves using an alcohol solution to loosen the corneal epithelium. This forms a thin flap (significantly thinner than that of LASIK). ",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAXPt8F18cEm-MbBf4v94XAJ9xL9qiqYBiCw&usqp=CAU"
+    },
+    {
+        "id": "4",
+        "name": "Incision Lenticule Extraction",
+        "price": "1806",
+        "description": "Small incision lenticule extraction is a relatively new procedure that corrects myopia. During the process, a laser creates a small disc of tissue within the inner layer of your cornea. Then, the surgeon removes this tissue, called a lenticule, via a small incision on your cornea.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQzjk68e7lNsEbi5kuaQ5ywpIZHG9Ifd9vRRyWTFzsMt8zhN1rraEjrU4_UjQ09wuN-HM&usqp=CAU"
+    },
+    {
+        "id": "5",
+        "name": "Radial Keratotomy",
+        "price": "300",
+        "description": "Radial keratotomy gained popularity in the 1980s but is now considered obsolete. It is a procedure that corrects low to moderate amounts of myopia. RK has now been replaced by laser eye surgery.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQyJ2SDi2tTlZ8MHXNb_FTodTnyifpMoNL2caMOhHazBbL_83fSg_po12Al44ji7oqW4&usqp=CAU"
+    },
+    {
+        "id": "6",
+        "name": "Astigmatic Keratotomy",
+        "price": "3000",
+        "description": "These procedures also include making incisions on the cornea to flatten the tissue. Astigmatic keratotomy and limbal relaxing incisions correct lower amounts of astigmatism. They are often performed after cataract surgery or corneal transplants. ",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5UL8Q-wxVWRyV0kygtamSyZiFXfiIkfRcp9tJOKPyf4AU6LEa9FVtrLGwFaeQGF8qko&usqp=CAU"
+    }
+]
