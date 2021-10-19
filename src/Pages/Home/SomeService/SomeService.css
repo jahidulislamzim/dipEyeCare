@@ -23,3 +23,8 @@
     margin-bottom: 50px;
     font-weight:600;
 }
+
+.some-service img 
+{
+    height: 200px;
+}

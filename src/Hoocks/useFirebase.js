@@ -54,27 +54,15 @@ const useFirebase = () => {
         updateProfile(auth.currentUser, {
           displayName: fullName,
         })
-          .then(() => { })
-          .catch((error) => { });
-
-        const user = result.user;
-        console.log(user);
       })
-      .catch((error) => {
+      .catch(() => { });
 
-      });
   };
 
 
 
   const handleEmailLogin = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-
-      })
-      .catch((error) => {
-
-      });
   }
 
 

@@ -16,7 +16,7 @@ const SomeServices = () => {
               <img src={service.img} alt="" />
               <div class="card-body">
                 <h5 class="card-title">{service.name}</h5>
-                <p class="card-text"></p>
+                <p class="card-text">{service.description.slice(0, 120)}</p>
               </div>
               <div>
                 <Link to={`/booking/${service.id}`}>

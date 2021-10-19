@@ -5,19 +5,19 @@ const Doctors = () => {
 
     const [doctors, setDoctors] = useState([]);
     useEffect(() => {
-        fetch('services.json')
+        fetch('./doctors.json')
             .then(res => res.json())
             .then(data => setDoctors(data));
     }, []);
-    
-    
+
+
 
 
     return (
         <div className='doctors-container'>
             <h1>Our Doctors</h1>
             <div className='row row-cols-1 row-cols-md-3 g-4'>
-                
+
                 {
                     doctors.map((doctor) => (
                         <div className='col doctor-div'>
@@ -26,14 +26,14 @@ const Doctors = () => {
                             </div>
 
                             <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+                                <h5 class="card-title">{doctor.name}</h5>
+                                <p class="card-text">{doctor.description.slice(0, 120)}</p>
+                            </div>
 
                         </div>
                     ))
                 }
-         </div>
+            </div>
         </div>
     );
 };
