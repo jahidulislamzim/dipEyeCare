@@ -37,7 +37,7 @@ const Booking = () => {
                     <Card.Title>${exactService[0]?.price}</Card.Title>
                     <div className='details-button'>
                         <Button variant="secondary" ><Link className='go-service' to='/services'>Go Services</Link></Button>
-                        <Button variant="primary">Primary</Button>
+                        <Button variant="primary">Registration For surgay</Button>
 
                     </div>
                 </Card.Body>
