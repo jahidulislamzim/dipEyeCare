@@ -4,7 +4,7 @@ import './Service.css';
 
 const Service = ({ service }) => {
 
-  const { id, name, img, price } = service;
+  const { id, name, img, description } = service;
 
 
 
@@ -16,7 +16,7 @@ const Service = ({ service }) => {
         <img src={img} alt="" />
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
-          <h5 className="card-title">${price}</h5>
+          <p className="card-title">${description.slice(0, 150)}</p>
         </div>
         <div>
           <Link to={`/booking/${id}`}>

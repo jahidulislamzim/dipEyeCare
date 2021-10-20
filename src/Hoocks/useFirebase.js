@@ -16,6 +16,7 @@ initializeAuthentication();
 const useFirebase = () => {
   const [user, setUser] = useState({});
 
+  const [name, setName] = useState('');
   const [isloading, setIsloading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
   const auth = getAuth();
@@ -44,18 +45,24 @@ const useFirebase = () => {
       setIsloading(false);
     });
     return () => unsubscribed;
-  }, [auth]);
+  }, []);
 
 
 
-  const handleEmailRegister = (email, password, fullName) => {
+  const updateUserProfile = (name) => {
+    updateProfile(auth.currentUser, {
+      displayName: name
+    }).then(() => {
+
+    }).catch((error) => {
+
+    });
+  }
+
+
+  const handleEmailRegister = (fullName, email, password) => {
+    setName(fullName);
     return createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        updateProfile(auth.currentUser, {
-          displayName: fullName,
-        })
-      })
-      .catch(() => { });
 
   };
 
@@ -79,7 +86,9 @@ const useFirebase = () => {
     logOut,
     isloading,
     handleEmailRegister,
-    handleEmailLogin
+    handleEmailLogin,
+    updateUserProfile,
+    name
 
   };
 };

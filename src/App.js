@@ -13,6 +13,8 @@ import Profile from './Pages/Profile/Profile';
 import About from './Pages/About/About';
 import Contacts from './Pages/Contacts/Contacts';
 import Footer from './Pages/Shared/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
+import Facilities from './Pages/Home/Facilities/Facilities';
 
 
 function App() {
@@ -37,6 +39,9 @@ function App() {
           <Route path='/contacts'>
             <Contacts></Contacts>
           </Route>
+          <Route path='/facility'>
+            <Facilities></Facilities>
+          </Route>
           <Route path='/login'>
             <Login></Login>
           </Route>
@@ -49,6 +54,9 @@ function App() {
           <PrivateRoute path="/booking/:id">
             <Booking></Booking>
           </PrivateRoute>
+          <Route path='*'>
+            <NotFound></NotFound>
+          </Route>
         </Switch>
         <Footer></Footer>
       </BrowserRouter>

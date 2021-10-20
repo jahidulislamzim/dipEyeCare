@@ -7,7 +7,7 @@ import banner3 from '../../../Images/Banner/banner-03.jpg';
 
 const Banner = () => {
     return (
-         <>
+        <>
             <Carousel >
                 <Carousel.Item className='carousel-item'>
                     <img
@@ -15,10 +15,7 @@ const Banner = () => {
                         src={banner1}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Top Doctors In Bangladesh</h3>
-                        <p>We have top doctors </p>
-                    </Carousel.Caption>
+
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
                     <img
@@ -27,10 +24,7 @@ const Banner = () => {
                         alt="Second slide"
                     />
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
+
                 </Carousel.Item>
                 <Carousel.Item className='carousel-item'>
                     <img
@@ -38,11 +32,6 @@ const Banner = () => {
                         src={banner3}
                         alt="Third slide"
                     />
-
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
         </>

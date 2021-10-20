@@ -16,12 +16,16 @@ const Login = () => {
     const [email, setEmail] = useState({});
     const [password, setPassword] = useState({});
     const [message, setMessage] = useState('');
+    const [googleMessage, setGoogleMessage] = useState('');
 
     const handleGoogleLogin = () => {
 
         signInWithGoogle()
             .then(result => {
                 history.push(redirect_uri);
+            })
+            .catch((error) => {
+                setGoogleMessage(error.message);
             })
     }
 
@@ -84,6 +88,8 @@ const Login = () => {
             </div>
 
             <button onClick={handleGoogleLogin} className="btn btn-warning">Google Sing In</button>
+
+            <p className='error-message mt-2'>{googleMessage}</p>
         </div>
     );
 };

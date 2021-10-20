@@ -1,0 +1,39 @@
+[
+    {
+        "id": "1",
+        "name": " Ambulatory surgical centers",
+        "description": "Ambulatory surgical centers, also called outpatient surgical facilities, allow patients to receive certain surgical procedures outside a hospital environment. These environments often offer surgeries at a lower cost than hospitals while also reducing the risk of exposure to infection—since patients are there for surgery, not to recover from sickness and disease.",
+        "img": "https://www.unitex.com/wp-content/uploads/2017/08/Unitex_Creative_Content_August-1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Birth centers",
+        "description": "A birth center is a healthcare facility for childbirth that focuses on the midwifery model, according to the American Association of Birth Centers. They aim to create a birth environment that feels more comfortable to the mother and allows for a cost-effective, family-inclusive birth.",
+        "img": "https://images.agoramedia.com/wte3.0/gcms/giving-birth-at-birthing-center-2020-722x406.jpg?width=414"
+    },  
+    {
+        "id": "3",
+        "name": "Blood banks",
+        "description": "Red blood cells carry oxygen, platelets help the blood clot and plasma has specific proteins that allows proper regulation of coagulation and healing,” writes the American Society of Hematology. Sometimes patients need these particular components specifically, and sometimes they just need lots of blood. For example, a single car accident victim could require as many as 100 pints of blood.",
+        "img": "https://s7d2.scene7.com/is/image/TWCNews/0706_blood_bags_pixabayjpg"
+    },
+    {
+        "id": "4",
+        "name": "Clinics and medical offices",
+        "description": "Many people go to a clinic for routine doctor’s appointments and checkups. These healthcare facilities can be a physician’s private practice, a group practice setting or a corporately owned clinic that may be connected to a larger healthcare system or hospital.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzd4O4zy5fAycC34wvpbtKJZuzgL9yCxsidA&usqp=CAU"
+    },
+    {
+        "id": "5",
+        "name": "Diabetes education centers",
+        "description": "Patients with diabetes need to manage the disease and typically make lifestyle adjustments to keep it from becoming life-threatening. Since diabetes is so widespread, diabetes education centers rose up to help patients manage their disease and to help people at risk for diabetes to avoid it, if possible.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBb9DUSU2a_e7_2BVI0XRbJFg1CMb9k6pkCA&usqp=CAU"
+    },
+    {
+        "id": "6",
+        "name": "Dialysis Centers",
+        "description": "Patients with kidney disease often need regular treatments of dialysis. Dialysis is a process that filters and cleans the blood artificially—the work functioning kidneys normally take on. About 14 percent of Americans have chronic kidney disease. When kidneys aren’t able to filter the blood the way they are supposed to, patients might need dialysis as often as three times a week to avoid serious complications. With such high demand, dialysis facilities rose up to meet patient needs and avoid undue strain on hospitals.",
+        "img": "https://lh3.googleusercontent.com/proxy/ynI_raZlgBniiZWNKehe47b31YnzpMzVVUEfXWuuXaZB004GFbv2CV0aSjTSaRqfHaIp7wr_WW0nZSR-mCNgSlaHOJ3fSInaeeRopXmpgAREc_1_uWLaO4woFVkelOD9y1NOUc7x"
+    }
+    
+]

@@ -8,7 +8,8 @@ import './Header.css';
 
 const Header = () => {
 
-  const { user, logOut } = useAuth();
+
+  const { logOut, user, name } = useAuth();
   return (
 
     <>
@@ -23,25 +24,24 @@ const Header = () => {
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <Nav.Link as={Link} to="/contacts">Contacts</Nav.Link>
 
-
               <Nav.Link as={Link} to='/profile'>Profile</Nav.Link>
+              <Nav.Link as={Link} to='/facility'>Facility</Nav.Link>
 
-
-              {
-                user?.email &&
-                <h6>{user.displayName}</h6>
-
-              }
-
-
+              <Nav.Link as={Link} to='/profile'>
+                {user?.email &&
+                  <small>{user.displayName || name}</small>
+                }
+              </Nav.Link>
 
               {
                 user?.email ?
 
-                  <Nav.Link as={Link} className='header-button' to='/' onClick={logOut}><Button variant="dark">Log Out</Button></Nav.Link>
+                  < Nav.Link as={Link} className='header-button' to='/' onClick={logOut}><Button variant="dark">Log Out</Button></Nav.Link>
                   :
                   <Nav.Link as={Link} className='header-button' to="/login"><Button variant="dark">Log In</Button></Nav.Link>
               }
+
+
             </Nav>
           </Navbar.Collapse>
         </Container>

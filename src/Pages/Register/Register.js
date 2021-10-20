@@ -4,12 +4,36 @@ import useAuth from '../../Hoocks/useAuth';
 
 const Register = () => {
 
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_uri = location?.state?.from || '/';
 
-  const { handleEmailRegister, user } = useAuth();
+
+  const [message, setMessage] = useState('')
+
+  const { handleEmailRegister, updateUserProfile, signInWithGoogle } = useAuth();
 
   const [fullName, setFullName] = useState({});
   const [email, setEmail] = useState({});
   const [password, setPassword] = useState({});
+  const [googleMessage, setGoogleMessage] = useState('');
+
+
+  const handleGoogleLogin = () => {
+
+    signInWithGoogle()
+      .then(result => {
+        history.push(redirect_uri);
+      })
+      .catch((error) => {
+        setGoogleMessage(error.message);
+      })
+  }
+
+
+
+
+
 
   const handleRegintration = e => {
     e.preventDefault();
@@ -31,17 +55,18 @@ const Register = () => {
 
 
   const handleRegister = () => {
-    handleEmailRegister(email, password, fullName)
+    handleEmailRegister(fullName, email, password)
       .then((result) => {
-        result.user &&
-          history.push(redirect_uri);
-      })
+        updateUserProfile(fullName);
+        history.push(redirect_uri);
 
+      })
+      .catch((error) => {
+        setMessage(error.message)
+      });
   }
 
-  const location = useLocation();
-  const history = useHistory();
-  const redirect_uri = location?.state?.from || '/';
+
 
 
 
@@ -55,7 +80,7 @@ const Register = () => {
   return (
     <div className='container'>
 
-      <h1>Please Login</h1>
+      <h1>Please Register</h1>
 
 
       <form className='mb-3' onSubmit={handleRegintration}>
@@ -72,6 +97,7 @@ const Register = () => {
           <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
           <input type="password" onBlur={handlePassword} className="form-control" id="exampleInputPassword1" />
         </div>
+        <p className='error-message'>{message}</p>
         <button type="submit" onClick={handleRegister} className="btn btn-primary">Register</button>
       </form>
 
@@ -81,11 +107,12 @@ const Register = () => {
 
 
 
-      <button className="btn btn-warning">Google Sing In</button>
+      <button onClick={handleGoogleLogin} className="btn btn-warning">Google Sing In</button>
+
+      <p className='error-message mt-2'>{googleMessage}</p>
 
 
-
-    </div>
+    </div >
   );
 };
 
