@@ -23,7 +23,8 @@ const Register = () => {
 
     signInWithGoogle()
       .then(result => {
-        history.push(redirect_uri);
+        result.user &&
+          history.push(redirect_uri);
       })
       .catch((error) => {
         setGoogleMessage(error.message);
